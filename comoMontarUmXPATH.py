@@ -14,8 +14,8 @@
 //*[contains(text(),'Dropdown') and  contains(text(),'Bootstrap') ] #encontra o que tenha as duas palavras
 
 # Inicia com um texto
-//*[starts-with(text(),"Exemplo")]
-//*[starts-with(@class,"btn")]
+//*[starts-with(text(),"Exemplo")] #buasca aldo que inicia com ese texto
+//*[starts-with(@class,"btn")] #buasca aldo que inicia com este nome na classe
 
 # Buscando apenas por um texto spefícico
 //*[text()="Exemplo Checkbox"] # Genérico, porém especificando o texto
