@@ -14,8 +14,8 @@
 //*[contains(text(),'Dropdown') and  contains(text(),'Bootstrap') ] #encontra o que tenha as duas palavras
 
 # Inicia com um texto
-//*[starts-with(text(),"Exemplo")] #buasca aldo que inicia com ese texto
-//*[starts-with(@class,"btn")] #buasca aldo que inicia com este nome na classe
+//*[starts-with(text(),"Exemplo")] #busca aldo que inicia com ese texto
+//*[starts-with(@class,"btn")] #busca aldo que inicia com este nome na classe
 
 # Buscando apenas por um texto spefícico
 //*[text()="Exemplo Checkbox"] # Genérico, porém especificando o texto
@@ -29,7 +29,7 @@
 # Como encontrar filhos de cada elemento
 # Encontra único filho
 //div/fieldset
-//div/fieldset/h4
-# Encontrar filho, quando há multiplos filhos
+//div/fieldset/h4 #caso queira especificar, basta adiconar um elemento na div, colocando div='nome aqui dentro'
+# Encontrar somente um filho, quando há multiplos filhos
 # Find child when multiple elements
-//thead/tr//th[2]
+//thead/tr//th[2] #o numero dentro do colchetes é o indice da posição, lembrando que indice começa no 0
