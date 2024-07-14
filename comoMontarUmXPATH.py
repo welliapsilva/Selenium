@@ -10,8 +10,8 @@
 
 # apenas contem um parte do texto
 //*[contains(text(),"Exemplo")] 
-//*[contains(text(),"Exemplo") or contains( text(), "Dropdown" )]
-//*[contains(text(),'Dropdown') and  contains(text(),'Bootstrap') ]
+//*[contains(text(),"Exemplo") or contains( text(), "Dropdown" )] #encontra uma palava ou outra
+//*[contains(text(),'Dropdown') and  contains(text(),'Bootstrap') ] #encontra o que tenha as duas palavras
 
 # Inicia com um texto
 //*[starts-with(text(),"Exemplo")]
