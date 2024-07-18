@@ -1,6 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
 # Fonte de opções de switches https://chromium.googlesource.com/chromium/src/+/master/chrome/common/chrome_switches.cc e  https://peter.sh/experiments/chromium-command-line-switches/
@@ -34,8 +32,7 @@ chrome_options.add_experimental_option('prefs', {
 
 })
 # inicializando o webdriver
-driver = webdriver.Chrome(service=ChromeService(
-    ChromeDriverManager().install()), options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 # Navegar até um site
 driver.get('https://pt.wikipedia.org/wiki/Brasil')
 

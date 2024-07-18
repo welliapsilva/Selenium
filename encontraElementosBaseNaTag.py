@@ -1,7 +1,5 @@
 from tkinter import Radiobutton
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
@@ -18,8 +16,7 @@ def iniciar_driver():
         'profile.default_content_setting_values.automatic_downloads': 1,
 
     })
-    driver = webdriver.Chrome(service=ChromeService(
-        ChromeDriverManager().install()), options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
 
     return driver
 

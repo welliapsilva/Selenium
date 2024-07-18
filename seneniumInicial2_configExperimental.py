@@ -1,7 +1,5 @@
 #inicial para usar o selenium
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options # configura opçoes do  navegacor
 
 chrome_options = Options()
@@ -33,7 +31,7 @@ chrome_options.add_experimental_option('prefs',{
        
 })
 # inicializando o webdriver
-driver= webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),options=chrome_options)#instalando as dependencias do google Chrome do computador
+driver= webdriver.Chrome(options=chrome_options)#instalando as dependencias do google Chrome do computador
 
 #navegar ate um site usando driver
 driver.get('https://pt.wikipedia.org/wiki/Brasil')
