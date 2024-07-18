@@ -19,7 +19,7 @@ def iniciar_driver():
     driver = webdriver.Chrome(options=chrome_options)
 
     return driver
-
+#radio button é diferente de checkbox, ele é um campo que so da pra marcar um por vez
 
 driver = iniciar_driver()
 # navegar até o site
