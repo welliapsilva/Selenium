@@ -25,7 +25,7 @@ driver = iniciar_driver()
 # navegar até o site
 driver.get('https://cursoautomacao.netlify.app')
 linux_radio_button = driver.find_element(By.ID, 'LinuxRadioButton')#selecionou somente um elemento
-if linux_radio_button.is_selected() == True:
+if linux_radio_button.is_selected() == True:#verifica se o botao já est amarcado antes de clicar
     print('botão já está selecionado')
 sleep(1)
 linux_radio_button.click()
