@@ -34,7 +34,10 @@ sleep(2)
 paises_dropdown = driver.find_element(By.XPATH, "//select[@id='paisesselect']")
 opcoes = Select(paises_dropdown)
 sleep(1)
-
+#pode acesdar tambá assim por indice
+#opcoes.select_by_index(1) ##neste caso selecoina pelo indice
+#pode acesdar tambá assim por value
+#opcoes.select_by_value('estadosunidos) ##neste caso selecoina pelo indice
 opcoes.select_by_visible_text('Estados Unidos')
 sleep(1)
 
