@@ -38,7 +38,7 @@ driver.execute_script('window.scrollTo(0,1500);')
 sleep(1)
 imagens = driver.find_elements(By.XPATH, "//img[@class='img-thumbnail']")
 sleep(1)
-contador = 1 #este contador gera um nuero diferente que é adicionado no nome da imagem a cada vez que a loop executa.
+contador = 1 #este contador representa o numero incial e posterior sera usado para gerar um numero diferente que é adicionado no nome da imagem a cada vez que a loop executa.
 for imagem in imagens:
     with open(f'imagem{contador}.png', 'wb') as arquivo: #contador usado com parta do nome da imagem
         arquivo.write(imagem.screenshot_as_png)
